@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10; /* Ensure the navbar stays on top */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.content {
+    display: flex;
+    flex-grow: 1;
+    height: 100%;
+    padding-top: 50px; /* Adjust for navbar height */
+}
+
+.left, .right {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 50px); /* Ensure full height minus navbar */
+}
+
+video {
+    width: 100%; /* Adjust video to fill container */
+    max-width: 90%; /* Prevent video from exceeding its container width */
+    height: auto;
+}
+
+img {
+    width: 100%; /* Adjust image to fill container */
+    max-width: 90%; /* Prevent image from exceeding its container width */
+    height: auto;
+}

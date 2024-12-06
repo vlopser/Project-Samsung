@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SMART MOVES</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Entrenamiento</a></li>
+            <li><a href="#">Subir ejercicio</a></li>
+            <li><a href="#">Informe de progreso</a></li>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="left">
+            <video src="/static/video.mp4" controls autoplay loop></video>
+        </div>
+        <div class="right">
+            <img src="{{ url_for('video_feed') }}" alt="Live Feed">
+        </div>
+    </div>
+</body>
+</html>
